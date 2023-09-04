@@ -1,3 +1,5 @@
+package ramda;
+
 @FunctionalInterface
 interface MyFunction {
     void run(); // public abstract void run();
@@ -5,9 +7,9 @@ interface MyFunction {
 
 public class Ramda {
 
-    static void execute(MyFunction f) { // 매개변수의 타입이 MyFunction인 메서드
-        f.run();
-    }
+        static void execute(MyFunction f) { // 매개변수의 타입이 MyFunction인 메서드
+            f.run();
+        }
 
     static MyFunction getMyFunction() { // 반환 타입이 MyFunction인 메서드
 //        MyFunction f = () -> System.out.println("f3.run()");
